@@ -1,5 +1,8 @@
 # basic-vue-projects
 
+Contains multiple smaller project for learning vue. Used vue router for navigation
+
+
 ## Project setup
 ```
 npm install
