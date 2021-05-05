@@ -5,6 +5,7 @@ import Jobs from "../views/jobs/Jobs.vue";
 import JobDetails from "../views/jobs/JobDetails.vue";
 import NotFound from "../views/NotFound.vue";
 import Modal from "../views/Modal.vue";
+import VueForm from "../views/VueForm.vue";
 
 const routes = [
   {
@@ -43,6 +44,11 @@ const routes = [
     path: "/modal",
     name: "Modal",
     component: Modal,
+  },
+  {
+    path: "/vueForm",
+    name: "VueForm",
+    component: VueForm,
   },
 ];
 

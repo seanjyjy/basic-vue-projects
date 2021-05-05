@@ -2,6 +2,7 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link :to="{ name: 'ReactionTimer' }">Reaction Timer</router-link> |
+    <router-link :to="{ name: 'VueForm' }">Form</router-link> |
     <router-link :to="{ name: 'Jobs' }">Jobs</router-link> |
     <router-link :to="{ name: 'Modal' }">Modal</router-link>
   </div>
@@ -40,6 +41,8 @@ export default {
 
 #nav {
   padding: 30px;
+  background: #fff;
+  box-shadow: -1px -2px 17px 1px rgba(232, 238, 255, 1);
 }
 
 #nav a {
@@ -69,7 +72,7 @@ button {
   font-size: 16px;
   letter-spacing: 1px;
   cursor: pointer;
-  margin: 10px;
+  margin: 30px 10px 0px 10px;
   font-weight: bold;
   transition: all 0.2s linear;
   box-shadow: 2px 2px 5px 2px rgba(77, 77, 77, 0.27);
