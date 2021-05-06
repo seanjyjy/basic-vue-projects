@@ -57,4 +57,9 @@ export default {
 .job a {
   text-decoration: none;
 }
+@media screen and (max-width: 600px) {
+  .job h2 {
+    width: 80%;
+  }
+}
 </style>
