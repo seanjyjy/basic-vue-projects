@@ -28,6 +28,11 @@ export default {
   background: white;
   border-radius: 10px;
 }
+@media screen and (max-width: 400px) {
+  .modal {
+    width: 80%;
+  }
+}
 .backdrop {
   top: 0;
   position: fixed;

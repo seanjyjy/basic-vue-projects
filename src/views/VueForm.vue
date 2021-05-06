@@ -78,6 +78,11 @@ form {
   -webkit-box-shadow: 1px 2px 5px 2px rgba(82, 82, 82, 0.23);
   -moz-box-shadow: 1px 2px 5px 2px rgba(82, 82, 82, 0.23);
 }
+@media screen and (max-width: 520px) {
+  form {
+    width: 80%;
+  }
+}
 label {
   color: #aaa;
   display: inline-block;

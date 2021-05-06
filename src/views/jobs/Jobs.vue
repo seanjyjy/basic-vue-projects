@@ -25,7 +25,14 @@ export default {
     fetch("http://localhost:3000/jobs")
       .then((response) => response.json())
       .then((data) => (this.jobs = data))
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        // we will come here iff in real deployment as we are unable to run json-server first
+        this.jobs = [
+          { title: "Job 1", id: 1, details: "this is job 1" },
+          { title: "Job 2", id: 2, details: "this is job 2" },
+          { title: "Job 3", id: 3, details: "this is job 3" },
+        ];
+      });
   },
 };
 </script>

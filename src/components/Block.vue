@@ -50,4 +50,9 @@ export default {
   padding: 100px 0;
   margin: 40px auto;
 }
+@media screen and (max-width: 400px) {
+  .block {
+    width: 80%;
+  }
+}
 </style>

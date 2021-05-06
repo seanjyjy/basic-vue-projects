@@ -1,9 +1,15 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link :to="{ name: 'ReactionTimer' }">Reaction Timer</router-link> |
-    <router-link :to="{ name: 'VueForm' }">Form</router-link> |
-    <router-link :to="{ name: 'Jobs' }">Jobs</router-link> |
+    <router-link to="/">Home</router-link>
+    <span class="temp-span"> | </span>
+    <router-link :to="{ name: 'ReactionTimer' }">Reaction Timer</router-link>
+    <span class="temp-span"> | </span>
+    <router-link :to="{ name: 'VueForm' }">Form</router-link>
+    <span class="temp-span"> | </span>
+    <router-link :to="{ name: 'Jobs' }">Jobs</router-link>
+    <span class="temp-span"> | </span>
+    <router-link :to="{ name: 'Posts' }">Posts</router-link>
+    <span class="temp-span"> | </span>
     <router-link :to="{ name: 'Modal' }">Modal</router-link>
   </div>
   <!-- <button @click="redirect">Redirect</button> -->
@@ -44,7 +50,15 @@ export default {
   background: #fff;
   box-shadow: -1px -2px 17px 1px rgba(232, 238, 255, 1);
 }
-
+@media screen and (max-width: 580px) {
+  #nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .temp-span {
+    display: none;
+  }
+}
 #nav a {
   font-weight: bold;
   color: #2c3e50;
