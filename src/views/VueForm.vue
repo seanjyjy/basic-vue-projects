@@ -81,6 +81,7 @@ form {
 @media screen and (max-width: 520px) {
   form {
     width: 80%;
+    padding: 20px;
   }
 }
 label {
