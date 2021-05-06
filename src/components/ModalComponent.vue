@@ -28,7 +28,7 @@ export default {
   background: white;
   border-radius: 10px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .modal {
     width: 80%;
   }
